@@ -4,11 +4,11 @@ services:
   nextjs:
     container_name: nextjs-app-example-loginPage-demo
     build:
-      context: .
+      context: ./../
       dockerfile: Dockerfile
     ports:
       - "3097:3000"
     restart: always
     volumes:
-      - ./:/app
-      - /app/node_modules
+      - ./../:/app
+      - ./../app/node_modules
